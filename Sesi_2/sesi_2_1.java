@@ -206,7 +206,7 @@ public class sesi_2_1 {
         }else{
             System.out.println("cetak : "+(saldo-biayaAdmin));
         }
-
+        scan.close();
 
     }
 }
