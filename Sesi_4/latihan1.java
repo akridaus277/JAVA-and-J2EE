@@ -25,7 +25,7 @@ public class latihan1{
                 System.out.println("Maaf input anda tidak valid");
             }
         }while(!valid);
-        
+        input_r.close();
         PI = 3.14;
         Luas = PI * r * r;
         System.out.println("Luas lingkaran tersebut adalah = "+Luas+" cm2");
