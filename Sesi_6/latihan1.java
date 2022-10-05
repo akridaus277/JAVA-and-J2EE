@@ -50,6 +50,7 @@ public class latihan1 {
 
     }
     public static void main(String[] args) {
+        //Membuat objek scanner
         Scanner in = new Scanner(System.in);
         
         //deklarasi variabel x, y, dan z

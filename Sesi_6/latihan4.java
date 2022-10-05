@@ -10,7 +10,7 @@ public class latihan4 {
         Kabisat(){
             this.tahun = 0;
         }
-
+        //function setter untuk menampung inputan tahun user
         public void setTahun(int tahun) {
             this.tahun = tahun;
         }
@@ -42,6 +42,7 @@ public class latihan4 {
 
     }
     public static void main(String[] args) {
+        //Membuat objek scanner
         Scanner in = new Scanner(System.in);
         //meminta user untuk input tahun untuk dicek
         System.out.println("program untuk menentukan TAHUN KABISAT");

@@ -35,7 +35,7 @@ public class latihan2 {
         //deklarasi ukuran row dan column untuk array framework
         int size_row = 2;
         int size_column = 3;
-        
+        //Membuat objek scanner
         Scanner in = new Scanner(System.in);
         //deklarasi objek framework untuk membuat array framework
         Framework framework = new Framework(size_row,size_column);

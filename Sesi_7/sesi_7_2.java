@@ -10,32 +10,41 @@ public class sesi_7_2 {
         System.out.println("Masukkan jumlah data : ");
         int jlh_data = scan.nextInt();
 
-        //Input nilai tiap data
-        int[] data = new int[jlh_data]; //array untuk nilai tiap data
-        System.out.println();
+        int maxRand = jlh_data;
+        int minRand = 0;
+        int[] data = new int[jlh_data];
         for (int i = 0; i < jlh_data; i++) {
-            System.out.print("Input nilai data ke-"+ (i+1) +" : ");
-            data[i] = scan.nextInt();
+            data[i] = (int) Math.floor(Math.random()*(maxRand-minRand+1)+minRand);
         }
+        
+        // //Input nilai tiap data
+        // int[] data = new int[jlh_data]; //array untuk nilai tiap data
+        // System.out.println();
+        // for (int i = 0; i < jlh_data; i++) {
+        //     System.out.print("Input nilai data ke-"+ (i+1) +" : ");
+        //     data[i] = scan.nextInt();
+        // }
 
         //Tampilkan data sebelum di sorting
         System.out.println();
-        System.out.print("Data sebelum disorting : ");
-        for (int i = 0; i < jlh_data; i++) {
-            System.out.print(data[i]+" ");
-        }
+        // System.out.print("Data sebelum disorting : ");
+        // for (int i = 0; i < jlh_data; i++) {
+        //     System.out.print(data[i]+" ");
+        // }
 
+        System.out.println();
+        long start = System.nanoTime();
         
         //Proses bubble sort
         System.out.println("\n\nProses Bubble Sort");
         for (int i = 0; i < jlh_data-1; i++) {
-            System.out.println("Iterasi ke-"+(i+1)+" : ");
-            for (int j = 0; j < jlh_data; j++) {
-                System.out.print(data[j]+" ");
-            }
-            System.out.println("Apakah data sudah benar urutannya?");
+            // System.out.println("Iterasi ke-"+(i+1)+" : ");
+            // for (int j = 0; j < jlh_data; j++) {
+            //     System.out.print(data[j]+" ");
+            // }
+            // System.out.println("Apakah data sudah benar urutannya?");
 
-            String pesan = "    Tidak ada pengurutan";
+            // String pesan = "    Tidak ada pengurutan";
 
             for (int j = 0; j < jlh_data - i - 1; j++){
                 if (data[j] > data[j + 1]) {
@@ -46,16 +55,18 @@ public class sesi_7_2 {
                 }
             }
 
-            for (int j = 0; j < jlh_data; j++) {
-                System.out.print(data[j]+" ");
-            }
-            System.out.println(pesan+"\n");
+            // for (int j = 0; j < jlh_data; j++) {
+            //     System.out.print(data[j]+" ");
+            // }
+            // System.out.println(pesan+"\n");
         }
+        long finish = System.nanoTime();
         //Tampilkan data setelah disorting
-        System.out.print("Data setelah disorting : ");
-        for (int i = 0; i < data.length; i++) {
-            System.out.print(data[i]+" ");
-        }
+        // System.out.print("Data setelah disorting : ");
+        // for (int i = 0; i < data.length; i++) {
+        //     System.out.print(data[i]+" ");
+        // }
+        System.out.println("Durasi sorting : "+ (finish-start));
         scan.close();
     }
 }
