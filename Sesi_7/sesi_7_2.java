@@ -34,9 +34,7 @@ public class sesi_7_2 {
                 System.out.print(data[j]+" ");
             }
             System.out.println("Apakah data sudah benar urutannya?");
-            boolean tukar = false;
-            int index  = 0;
-            int min = data[0];
+
             String pesan = "    Tidak ada pengurutan";
 
             for (int j = 0; j < jlh_data - i - 1; j++){
@@ -58,5 +56,6 @@ public class sesi_7_2 {
         for (int i = 0; i < data.length; i++) {
             System.out.print(data[i]+" ");
         }
+        scan.close();
     }
 }

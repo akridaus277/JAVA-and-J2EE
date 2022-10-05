@@ -1,6 +1,5 @@
 package Sesi_3;
 
-import java.util.function.ToIntFunction;
 import java.util.Scanner;
 
 public class latihan_3_1 {
@@ -49,5 +48,6 @@ public class latihan_3_1 {
         yourCC  = keyboard.nextLine();
         //call luhn function to check cc number
         System.out.print("Is your credit card valid ? : "+luhn(yourCC));
+        keyboard.close();
     }
 }

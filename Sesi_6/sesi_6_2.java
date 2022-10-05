@@ -81,7 +81,7 @@ public class sesi_6_2 {
         
     }
     public static void main(String[] args) {
-        BangunDatar bangunDatar = new BangunDatar();
+        // BangunDatar bangunDatar = new BangunDatar();
 
         Persegi persegi = new Persegi(2);
         Lingkaran lingkaran = new Lingkaran(7);

@@ -1,12 +1,11 @@
 package Sesi_2;
 
-import java.util.function.Function;
 
 public class latihan_2_1 {
 
     public static void main(String[] args) {
-        String bintang = "*";
-        int berulang = 5;
+        // String bintang = "*";
+        // int berulang = 5;
 
         int maxBilangan = 20;
         for (int i = 0; i < maxBilangan; i++) {

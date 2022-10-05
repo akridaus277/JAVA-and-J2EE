@@ -63,6 +63,6 @@ public class sesi_7_1 {
             System.out.print(data[i]+" ");
         }
 
-        
+        scan.close();
     }
 }
