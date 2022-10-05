@@ -33,14 +33,14 @@ public class latihan3 {
         double pembelian = 1000000;
         double diskon = 10;
         DecimalFormatSymbols symbols = new DecimalFormatSymbols(new Locale("id","ID"));
-        DecimalFormat formatter = new DecimalFormat("#,##0",symbols);
+        DecimalFormat formatter = new DecimalFormat("#,##0.-",symbols);
 
         HargaBayar hargaBayar = new HargaBayar(pembelian, diskon);
   
-        System.out.printf("A. Pembelian = Rp. %s,-",formatter.format(hargaBayar.getPembelian()));
+        System.out.printf("A. Pembelian = Rp. %s",formatter.format(hargaBayar.getPembelian()));
         System.out.println();
-        System.out.printf("A. Diskon = %s%%",formatter.format(hargaBayar.getDiskon()));
+        System.out.printf("B. Diskon = %s%%",(int)hargaBayar.getDiskon());
         System.out.println();
-        System.out.printf("A. Harga Bayar = Rp. %s,-",formatter.format(hargaBayar.getBayar()));
+        System.out.printf("C. Harga Bayar = Rp. %s",formatter.format(hargaBayar.getBayar()));
     }
 }
