@@ -4,9 +4,12 @@ import java.util.Locale;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 public class latihan5 {
+    //membuat class Pos
     static class Pos{
-        private Object[][] order; 
-        private Object[][] pos ;
+        //deklarasi order, pos, inventory 
+        private Object[][] order; //variabel order untuk menampung inputan order user
+        private Object[][] pos ; //variabel pos untuk 
+        //variabel inventory sebagai tabel acuan produk
         private Object[][] inventory = {
             {1,"Mouse Bluetooth 5.0",149999.0,10},
             {2,"Headphone External",246000.0,5},
@@ -78,12 +81,6 @@ public class latihan5 {
         }
         System.out.println();
         System.out.println("Total Bayar : Rp. " + formatter.format(pos.getTotal()));
-
-        // for (Object[] objects : pos.getPos()) {
-        //     int i = 1;
-        //     System.out.printf("%-7s %-30s %-7s %-7s %-7s %-7s",i,objects[1],objects[2],objects[3],objects[4],objects[5]);
-        //     System.out.println();
-        //     i++;
-        // }
+        in.close();
     }
 }
