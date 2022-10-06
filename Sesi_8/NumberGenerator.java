@@ -2,7 +2,7 @@ package Sesi_8;
 
 import java.util.Random;
 
-import org.junit.Test;
+// import org.junit.Test;
 
 public class NumberGenerator {
     private final int low;
