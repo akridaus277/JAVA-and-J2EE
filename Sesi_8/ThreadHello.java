@@ -1,0 +1,28 @@
+package Sesi_8;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
+public class ThreadHello implements Runnable {
+
+    private final String name;
+    public ThreadHello(String name){
+        this.name = name;
+    }
+
+    @Override
+    public void run() {
+        System.out.println(name + ": Hello");
+        try {
+            Thread.sleep(250);
+        } catch (InterruptedException e) {
+            Logger.getLogger(ThreadHello.class.getName()).log(Level.SEVERE,null,e);
+        }
+    }
+
+
+    
+}
+
+

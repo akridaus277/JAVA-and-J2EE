@@ -1,6 +1,5 @@
 package Sesi_7;
 
-import java.util.Scanner;
 
 //BINARY SEARCH
 public class sesi_7_3 {
