@@ -1,0 +1,508 @@
+{
+	"info": {
+		"_postman_id": "e5cf96b1-9a57-4e96-89b5-fbcba177192a",
+		"name": "Transportation Reservation System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login (User)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"passenger@gmail.com\",\r\n    \"password\":\"123456\"\r\n}\r\n\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login (Admin)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup (Tidak ada yang login)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"fachry@gmail.com\",\r\n    \"password\":\"123456\",\r\n    \"firstName\":\"Fachry\",\r\n    \"lastName\":\"Firdaus\",\r\n    \"mobileNumber\":\"09283674\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/user/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup (User sedang login)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwYXNzZW5nZXJAZ21haWwuY29tIiwiZXhwIjoxNjY2MTAyMzAwLCJpYXQiOjE2NjYxMDIwMDB9.Dw2lFXFoooBTNYlcJmA0J1JFRuvOEGAUbX145_OLHEBLPM2irmH4fmmaNlOX3fOMdhwKzVafkba0rQgV4iDdVg",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"user1@gmail.com\",\r\n    \"password\":\"123456\",\r\n    \"firstName\":\"Fachry\",\r\n    \"lastName\":\"Firdaus\",\r\n    \"mobileNumber\":\"09283674\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/user/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signup (Admin sedang login)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2NjYxMDExODcsImlhdCI6MTY2NjEwMDg4N30.MMtUfvSHy7H4E9gvi8mWLUf3f93E9_86L0R09tXJq5BHdUpIiyi3F-wtrQG6xvhOopHh-fDpT2ht4tvvqkoTcQ",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin1@gmail.com\",\r\n    \"password\":\"123456\",\r\n    \"firstName\":\"Fachry\",\r\n    \"lastName\":\"Firdaus\",\r\n    \"mobileNumber\":\"09283674\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/user/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/v1/user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(Admin) Get All Stops",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwYXNzZW5nZXJAZ21haWwuY29tIiwiZXhwIjoxNjY2MTA1MTM2LCJpYXQiOjE2NjYxMDQ4MzZ9.qQ5qaMT9DEnA_CLldQ2ux8CQBqrQcKh9ugD1gzDKF85lmJiOr5IE24bpDMfGXNslWXmAUGQxjyJc88VCC7t2Pw",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/reservation/stops",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"stops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(Admin) Get All Trip By Stops",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2NjYxMDYxNTYsImlhdCI6MTY2NjEwNTg1Nn0.STHutYLWUYOgRvXs1YIwhCEeuWIJFurLIdZnouYWb26oHsGO6WTcwkCw6khCn5-KkOUUUWsicALz5aJZe0uDTQ",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sourceStopCode\" : \"STPA\",\r\n    \"destinationStopCode\":\"STPB\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/reservation/tripsbystops",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"tripsbystops"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(Admin) Get All Trip Schedule By Date",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwYXNzZW5nZXJAZ21haWwuY29tIiwiZXhwIjoxNjY2MTA1NjEwLCJpYXQiOjE2NjYxMDUzMTB9.atVHN4-9mnIDMJbEpZFXFjpc87715KVmCMGFT7_x58aBQGtiM4J6ABxlOJPgIrF0uCvsCtvydJ27VG3N6lTFfw",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"tripDate\" : \"2022-10-16\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/reservation/tripschedules",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"tripschedules"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(Admin) Book Ticket",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2NjYxMDY4NzYsImlhdCI6MTY2NjEwNjU3Nn0.BRDNlADP6nEHDjgm0HBf-YjWXZojCwEKWEW8rxUUzOckep-x5v4n-aM69TgY7KzCyg2LPMQg6KcCc-3oJreEwA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tripScheduleId\" : \"1\"\r\n\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/reservation/bookticket",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"bookticket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(User) Edit Profile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwYXNzZW5nZXJAZ21haWwuY29tIiwiZXhwIjoxNjY2MTAyNjY1LCJpYXQiOjE2NjYxMDIzNjV9.goMKRIQfXXCXrH_ukX-aCE1n_v-uD-oYQYJfy3_g6kz7D81zcicijQyWsnqUAPV2Vd1BTMgPzDszS5JA3xbToA",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"firstName\":\"Akri\",\r\n    \"lastName\":\"Daus\",\r\n    \"mobileNumber\":\"0124432\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/user/profile",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(User) Add Agency",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2NjYwNzY0NTEsImlhdCI6MTY2NjA3NjE1MX0.PgmqMA-IXVXwn7rd4gRHaE23AfM_SQrU5foaNdVIAA5kl0HvcJbiWw3tqpj_g3JkP40XdyFwi-JWHyY39Vk27A",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"code\":\"Agency-B\",\r\n    \"details\":\"Strugling reaching desitnations\",\r\n    \"name\":\"Strugling Agency\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/agency",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"agency"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(User) Add Bus",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2NjYwODAxMTUsImlhdCI6MTY2NjA3OTgxNX0.IDZPBQx2CZITlc-Jjex6vN_pvcEDkks2mlKedRCY3EC9Ac-65-A0Gu_znjYk7ZGlHBHoTgfW521GZKTrK5-eog",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"capacity\":45,\r\n    \"code\":\"Agency-B-2\",\r\n    \"make\":\"BMW \",\r\n    \"agency_id\":1\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/bus",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"bus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(User) Get Bus by Agency",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwYXNzZW5nZXJAZ21haWwuY29tIiwiZXhwIjoxNjY2MTA4NDY5LCJpYXQiOjE2NjYxMDgxNjl9.0kFPfpqPzEv_iUz7Rbty4pybQZeq9c5438OTV_teGxW4_4avYn8dwdintKdttD2GqdF6NJ54aUh-pG2CkOk-HQ",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"agency_id\":1\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/bus",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"bus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "(User) Add Trip By Bus & Stop",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwYXNzZW5nZXJAZ21haWwuY29tIiwiZXhwIjoxNjY2MTA4NzUzLCJpYXQiOjE2NjYxMDg0NTN9.Mv2I11g8K17Jvse4hwkLDe4A6CYSBAzpzCpYWKBcvmRr9EAqV9pp0f3yV_ZMesVBhncHOhZHV-JLR_UT7Gs3qQ",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \"fare\":2,\r\n    \"journey_time\":40,\r\n    \"bus_id\":1,\r\n    \"dest_stop_id\":1,\r\n    \"source_stop_id\":2\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/reservation/trip",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"reservation",
+						"trip"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
