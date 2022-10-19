@@ -36,7 +36,6 @@ public class Bus implements Serializable{
 	@Column(name="make")
 	private String make;
 
-	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "agency_id", nullable = false)
 	private Agency agency;

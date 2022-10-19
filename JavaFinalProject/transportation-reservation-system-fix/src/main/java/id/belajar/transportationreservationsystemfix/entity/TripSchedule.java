@@ -33,7 +33,7 @@ public class TripSchedule implements Serializable{
 	@Column(name="trip_date")
 	private String tripDate;
 
-	@JsonIgnore
+
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "trip_id", nullable = false)
 	private Trip trip;

@@ -77,7 +77,7 @@ public class BusController {
 			agencyRepository.save(agency);
 
 
-			return new ResponseEntity<>(ExceptionMessage.format("Bus '%s' berhasil ditambahkan"), HttpStatus.OK);
+			return new ResponseEntity<>(ExceptionMessage.format("Bus '%s' berhasil ditambahkan",code), HttpStatus.OK);
 		}else {
 			
 			return new ResponseEntity<>(ExceptionMessage.format("Anda tidak memiliki akses ke API ini"), HttpStatus.FORBIDDEN);

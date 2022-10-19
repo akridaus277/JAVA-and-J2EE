@@ -20,11 +20,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/api/auth",
+					"raw": "https://guarded-taiga-78217.herokuapp.com/api/auth",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"guarded-taiga-78217",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"auth"
@@ -48,11 +50,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/api/auth",
+					"raw": "https://guarded-taiga-78217.herokuapp.com/api/auth",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"guarded-taiga-78217",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"auth"
@@ -68,7 +72,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"email\":\"fachry@gmail.com\",\r\n    \"password\":\"123456\",\r\n    \"firstName\":\"Fachry\",\r\n    \"lastName\":\"Firdaus\",\r\n    \"mobileNumber\":\"09283674\"\r\n\r\n}",
+					"raw": "{\r\n    \"email\":\"fachry123@gmail.com\",\r\n    \"password\":\"123456\",\r\n    \"firstName\":\"Fachry\",\r\n    \"lastName\":\"Firdaus\",\r\n    \"mobileNumber\":\"09283674\"\r\n\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -76,11 +80,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/api/v1/user/signup",
+					"raw": "https://guarded-taiga-78217.herokuapp.com/api/v1/user/signup",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"guarded-taiga-78217",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -112,11 +118,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/api/v1/user/signup",
+					"raw": "https://guarded-taiga-78217.herokuapp.com/api/v1/user/signup",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"guarded-taiga-78217",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -148,11 +156,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/api/v1/user/signup",
+					"raw": "https://guarded-taiga-78217.herokuapp.com/api/v1/user/signup",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"guarded-taiga-78217",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -169,11 +179,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/api/v1/user",
+					"raw": "https://guarded-taiga-78217.herokuapp.com/api/v1/user",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"guarded-taiga-78217",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -190,16 +202,18 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwYXNzZW5nZXJAZ21haWwuY29tIiwiZXhwIjoxNjY2MTA1MTM2LCJpYXQiOjE2NjYxMDQ4MzZ9.qQ5qaMT9DEnA_CLldQ2ux8CQBqrQcKh9ugD1gzDKF85lmJiOr5IE24bpDMfGXNslWXmAUGQxjyJc88VCC7t2Pw",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2NjYxNTM3NzcsImlhdCI6MTY2NjE1MDE3N30.85RsznDMoKWKjL9408wAuXappJFWHIoANBiJrQL6TR3cQ_2Ddtmkr88C1SK2Z1ZaKU5ReeWYALthWHx_SwvkEg",
 						"type": "default"
 					}
 				],
 				"url": {
-					"raw": "localhost:8080/api/v1/reservation/stops",
+					"raw": "https://guarded-taiga-78217.herokuapp.com/api/v1/reservation/stops",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"guarded-taiga-78217",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -220,7 +234,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2NjYxMDYxNTYsImlhdCI6MTY2NjEwNTg1Nn0.STHutYLWUYOgRvXs1YIwhCEeuWIJFurLIdZnouYWb26oHsGO6WTcwkCw6khCn5-KkOUUUWsicALz5aJZe0uDTQ",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2NjYxNTM3NzcsImlhdCI6MTY2NjE1MDE3N30.85RsznDMoKWKjL9408wAuXappJFWHIoANBiJrQL6TR3cQ_2Ddtmkr88C1SK2Z1ZaKU5ReeWYALthWHx_SwvkEg",
 						"type": "default"
 					}
 				],
@@ -234,11 +248,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/api/v1/reservation/tripsbystops",
+					"raw": "https://guarded-taiga-78217.herokuapp.com/api/v1/reservation/tripsbystops",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"guarded-taiga-78217",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -259,7 +275,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwYXNzZW5nZXJAZ21haWwuY29tIiwiZXhwIjoxNjY2MTA1NjEwLCJpYXQiOjE2NjYxMDUzMTB9.atVHN4-9mnIDMJbEpZFXFjpc87715KVmCMGFT7_x58aBQGtiM4J6ABxlOJPgIrF0uCvsCtvydJ27VG3N6lTFfw",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2NjYxNTM3NzcsImlhdCI6MTY2NjE1MDE3N30.85RsznDMoKWKjL9408wAuXappJFWHIoANBiJrQL6TR3cQ_2Ddtmkr88C1SK2Z1ZaKU5ReeWYALthWHx_SwvkEg",
 						"type": "default"
 					}
 				],
@@ -273,11 +289,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/api/v1/reservation/tripschedules",
+					"raw": "https://guarded-taiga-78217.herokuapp.com/api/v1/reservation/tripschedules",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"guarded-taiga-78217",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -295,7 +313,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2NjYxMDY4NzYsImlhdCI6MTY2NjEwNjU3Nn0.BRDNlADP6nEHDjgm0HBf-YjWXZojCwEKWEW8rxUUzOckep-x5v4n-aM69TgY7KzCyg2LPMQg6KcCc-3oJreEwA",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBnbWFpbC5jb20iLCJleHAiOjE2NjYxNTM3NzcsImlhdCI6MTY2NjE1MDE3N30.85RsznDMoKWKjL9408wAuXappJFWHIoANBiJrQL6TR3cQ_2Ddtmkr88C1SK2Z1ZaKU5ReeWYALthWHx_SwvkEg",
 						"type": "default"
 					}
 				],
@@ -309,11 +327,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/api/v1/reservation/bookticket",
+					"raw": "https://guarded-taiga-78217.herokuapp.com/api/v1/reservation/bookticket",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"guarded-taiga-78217",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -345,11 +365,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/api/v1/user/profile",
+					"raw": "https://guarded-taiga-78217.herokuapp.com/api/v1/user/profile",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"guarded-taiga-78217",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -381,11 +403,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/api/v1/agency",
+					"raw": "https://guarded-taiga-78217.herokuapp.com/api/v1/agency",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"guarded-taiga-78217",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -416,11 +440,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/api/v1/bus",
+					"raw": "https://guarded-taiga-78217.herokuapp.com/api/v1/bus",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"guarded-taiga-78217",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -440,7 +466,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwYXNzZW5nZXJAZ21haWwuY29tIiwiZXhwIjoxNjY2MTA4NDY5LCJpYXQiOjE2NjYxMDgxNjl9.0kFPfpqPzEv_iUz7Rbty4pybQZeq9c5438OTV_teGxW4_4avYn8dwdintKdttD2GqdF6NJ54aUh-pG2CkOk-HQ",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJwYXNzZW5nZXJAZ21haWwuY29tIiwiZXhwIjoxNjY2MTEyMTU4LCJpYXQiOjE2NjYxMTE4NTh9.BXF9k4-nTFYnbm5OnXucZ39wfqGaV2z4-_cTTtIhPI4Cs7WljxHOM2wNPa9Bkv7r9H9gOt2jFd48nmWLGWtHaQ",
 						"type": "default"
 					}
 				],
@@ -454,11 +480,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/api/v1/bus",
+					"raw": "https://guarded-taiga-78217.herokuapp.com/api/v1/bus",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"guarded-taiga-78217",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",
@@ -489,11 +517,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/api/v1/reservation/trip",
+					"raw": "https://guarded-taiga-78217.herokuapp.com/api/v1/reservation/trip",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"guarded-taiga-78217",
+						"herokuapp",
+						"com"
 					],
-					"port": "8080",
 					"path": [
 						"api",
 						"v1",

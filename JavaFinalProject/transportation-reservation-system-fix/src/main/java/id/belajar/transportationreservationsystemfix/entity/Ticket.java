@@ -33,12 +33,12 @@ public class Ticket implements Serializable{
 	@Column(name="seat_number")
 	private long seatNumber;
 
-	@JsonIgnore
+
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "user_id", nullable = false)
 	private User user;
 	
-	@JsonIgnore
+
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "trip_schedule_id", nullable = false)
 	private TripSchedule tripSchedule;

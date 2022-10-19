@@ -13,5 +13,6 @@ import id.belajar.transportationreservationsystemfix.entity.TripSchedule;
 @Repository
 public interface TripScheduleRepository extends JpaRepository<TripSchedule, Integer> {
 	List<TripSchedule> findAllByTripDate(String tripDate);
+	TripSchedule findByTripAndTripDate(Trip trip, String tripDate);
 }
 

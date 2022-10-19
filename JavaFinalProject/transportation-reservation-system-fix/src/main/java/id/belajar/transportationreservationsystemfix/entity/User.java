@@ -18,7 +18,7 @@ import javax.persistence.Table;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class User implements Serializable{
 
 	
@@ -43,10 +43,11 @@ public class User implements Serializable{
 	@Column(name="mobile_number")
 	private String mobileNumber;
 	
-	@JsonIgnore
+
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "role_id", nullable = false)
 	private Role role;
+	
 	
 	@JsonIgnore
 	@OneToMany(mappedBy = "user", fetch = FetchType.LAZY,
@@ -61,7 +62,7 @@ public class User implements Serializable{
         agency.setUser(null);
     }
     
-
+    @JsonIgnore
     @OneToMany(mappedBy = "user", fetch = FetchType.LAZY,
             cascade = CascadeType.ALL)
 	private Set<Ticket> tickets;

@@ -81,7 +81,7 @@ public class UserController {
 			String emailToken = jwtTokenUntil.getUsernameFromToken(jwtToken);
 			user = userInfoRepository.findByEmail(emailToken);
 			role = user.getRole();
-			user = new User(emailToken,encodedPassword,firstName,lastName,mobileNumber,role);
+			user = new User(email,encodedPassword,firstName,lastName,mobileNumber,role);
 			userInfoRepository.save(user);
 			roleRepository.save(role);
 			return new ResponseEntity<>(ExceptionMessage.format("email '%s' berhasil terdaftar", body.get("email")), HttpStatus.OK);

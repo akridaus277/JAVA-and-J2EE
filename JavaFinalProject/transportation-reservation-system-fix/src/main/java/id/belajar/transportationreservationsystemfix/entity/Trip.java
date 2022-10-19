@@ -33,22 +33,20 @@ public class Trip implements Serializable{
 	@Column(name="journey_time")
 	private long journeyTime;
 
-	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "agency_id", nullable = false)
 	private Agency agency;
 	
-	@JsonIgnore
+
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "bus_id", nullable = false)
 	private Bus bus;
-	
-	@JsonIgnore
+
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "dest_stop_id", nullable = false)
 	private Stop destStop;
 	
-	@JsonIgnore
+
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "source_stop_id", nullable = false)
 	private Stop sourceStop;

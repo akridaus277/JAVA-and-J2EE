@@ -36,11 +36,10 @@ public class Agency implements Serializable{
 	@Column(name="name")
 	private String name;
 
-	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "owner_user_id", nullable = false)
 	private User user;
-	
+
 	@JsonIgnore
 	@OneToMany(mappedBy = "agency", fetch = FetchType.LAZY,
             cascade = CascadeType.ALL)
@@ -53,7 +52,7 @@ public class Agency implements Serializable{
     	buses.remove(bus);
         bus.setAgency(null);
     }
-    
+
     @JsonIgnore
     @OneToMany(mappedBy = "agency", fetch = FetchType.LAZY,
             cascade = CascadeType.ALL)

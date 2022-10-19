@@ -52,7 +52,7 @@ public class StopController {
 		User user = userInfoRepository.findByEmail(email);
 
 		
-		if (user.getRole().getId()==2) {
+		if (user.getRole().getId()==1) {
 
 
 			return new ResponseEntity<List<Stop>>(stopRepository.findAll(), HttpStatus.OK);
